@@ -1,0 +1,28 @@
+# O QUE É NODE JS? O NodeJS é uma plataforma que utiliza da V8 (engine de entendimento do browser do Google Chrome)
+no lado do back-end, permitindo utilizar o JS para tratar requisições e respostas no servidor (back-end),
+acessar banco de dados, e etc.
+
+# ARQUIVO "package.json": Esse arquivo descreve como nossa aplicaçaõ vai se comportar. Mas, no nosso caso,
+de principal funcionalidade ele irá guardar as informações das versões das dependências do nosso projeto.
+
+# ARQUIVO "package.json": Apenas um cache das dependências do Node.
+
+# EXPRESS!? Sim! É um micro-framework que nos auxiliará a lidar com as rotas (endereços que os usuários poderão
+acessar em nossa API) e views (formas de visualização de nossa aplicação) de nossa aplicação.
+
+# INSTALANDO MONGODB COM O DOCKER
+  O Docker permite a conteinerização de recursos dentro de nossa máquina. Porém, eu decidi utilizar o MongoDB sem ser
+pelo Docker.
+
+# CONECTANDO DATABASE
+  Vamos instalar a dependência de produção "mongoose". É um ORM (encapsula as operações do banco de dados com códigos)
+de bancos não relacionais (no caso, MongoDB).
+
+  Como nossa aplicação terá vários "models" e, para nosso uso de "requires", vamos instalar uma dependência chamada
+"npm i require-dir" que faz o papel de "require" em um diretório em todos os arquivos automaticamente.
+
+# ADICIONANDO CORS
+  Para permitir que outros endereços acessem nossa API (além do Insomnia, Postman e/ou navegador) ou para barrar
+o acesso, devemos configurar o CORS (Cross-Origin Resource Sharing). É uma especificação do W3C que, quando
+implementado pelo navegador, permite que um site acesse recursos de outro site mesmo estando em domínios diferentes.
+  Para isso, vamos instalá-lo com o comando "npm install cors".
